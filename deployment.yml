@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: hystix
+  name: hystrix
 spec:
   type: NodePort
   selector:
