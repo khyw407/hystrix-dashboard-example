@@ -8,9 +8,9 @@ spec:
     app: spring-cloud-hystrix
   ports:
   - protocol: TCP
-    port: 32003
+    port: 9999
     targetPort: 9999
-    nodePort: 9999
+    nodePort: 32003
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
