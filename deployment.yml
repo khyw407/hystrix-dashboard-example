@@ -29,8 +29,8 @@ spec:
         app: spring-cloud-hystrix
         version: latest
     spec:
-      hostname: eureka
-      subdomain: eureka
+      hostname: hystrix
+      subdomain: hystrix
       containers:
       - name: spring-cloud-hystrix
         image: 192.168.0.8:5000/hystrix-dashboard:latest
