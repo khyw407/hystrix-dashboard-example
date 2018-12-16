@@ -1,3 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: hystrix
+spec:
+  rules:
+  - host: hystrix.192.168.0.9.nip.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: hystrix
+          servicePort: 32003
+---
 kind: Service
 apiVersion: v1
 metadata:
